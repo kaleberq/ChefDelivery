@@ -12,7 +12,7 @@ struct NavigationBar: View {
         HStack{
             Spacer()
             
-            Button("R. Japa Baiano, 123") {
+            Button("R. kalebe misael santos e silve, 26") {
                 
             }
             .font(.subheadline)
@@ -32,6 +32,7 @@ struct NavigationBar: View {
 
 struct NavigationBar_Previews: PreviewProvider {
     static var previews: some View {
+        
         NavigationBar()
             .previewLayout(.sizeThatFits)
             .padding()

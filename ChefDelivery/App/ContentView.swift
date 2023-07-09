@@ -1,19 +1,19 @@
-//
-//  ContentView.swift
-//  ChefDelivery
-//
-//  Created by Mac on 03/07/23.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
         VStack{
-            Text("aaaa")
-            Text("aaaa")
+            NavigationBar().padding(.horizontal, 15).safeAreaInset(edge: .top, content: {
+                Color.white
+                    .frame(height: 44)
+            })
+            ScrollView(.vertical, showsIndicators: false){
+                VStack{
+                    OrderTypeGridView()
+                }
+            }
+            
         }
-       
     }
 }
 

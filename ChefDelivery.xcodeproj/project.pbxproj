@@ -12,6 +12,10 @@
 		04FFE7E42A539E3100048904 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FFE7E32A539E3100048904 /* Assets.xcassets */; };
 		04FFE7E72A539E3100048904 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FFE7E62A539E3100048904 /* Preview Assets.xcassets */; };
 		04FFE7F02A53A2FB00048904 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FFE7EF2A53A2FB00048904 /* NavigationBar.swift */; };
+		04FFE7F72A54F5CA00048904 /* OrderTypeGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FFE7F62A54F5CA00048904 /* OrderTypeGridView.swift */; };
+		04FFE7FA2A54FAE100048904 /* OrderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FFE7F92A54FAE100048904 /* OrderType.swift */; };
+		04FFE7FC2A54FD1500048904 /* DataSourceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FFE7FB2A54FD1500048904 /* DataSourceMock.swift */; };
+		04FFE7FE2A5B1D8B00048904 /* OrderTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FFE7FD2A5B1D8B00048904 /* OrderTypeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,10 @@
 		04FFE7E32A539E3100048904 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04FFE7E62A539E3100048904 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		04FFE7EF2A53A2FB00048904 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		04FFE7F62A54F5CA00048904 /* OrderTypeGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTypeGridView.swift; sourceTree = "<group>"; };
+		04FFE7F92A54FAE100048904 /* OrderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderType.swift; sourceTree = "<group>"; };
+		04FFE7FB2A54FD1500048904 /* DataSourceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceMock.swift; sourceTree = "<group>"; };
+		04FFE7FD2A5B1D8B00048904 /* OrderTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTypeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				04FFE7EE2A53A2A700048904 /* App */,
+				04FFE7F82A54FA9800048904 /* Model */,
 				04FFE7ED2A53A28500048904 /* NavigationBar */,
-				04FFE7E32A539E3100048904 /* Assets.xcassets */,
+				04FFE7F12A54F4D100048904 /* GridView */,
 				04FFE7E52A539E3100048904 /* Preview Content */,
 			);
 			path = ChefDelivery;
@@ -64,6 +73,7 @@
 		04FFE7E52A539E3100048904 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				04FFE7E32A539E3100048904 /* Assets.xcassets */,
 				04FFE7E62A539E3100048904 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -84,6 +94,24 @@
 				04FFE7E12A539E2F00048904 /* ContentView.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		04FFE7F12A54F4D100048904 /* GridView */ = {
+			isa = PBXGroup;
+			children = (
+				04FFE7F62A54F5CA00048904 /* OrderTypeGridView.swift */,
+				04FFE7FD2A5B1D8B00048904 /* OrderTypeView.swift */,
+			);
+			path = GridView;
+			sourceTree = "<group>";
+		};
+		04FFE7F82A54FA9800048904 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04FFE7F92A54FAE100048904 /* OrderType.swift */,
+				04FFE7FB2A54FD1500048904 /* DataSourceMock.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,7 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04FFE7FA2A54FAE100048904 /* OrderType.swift in Sources */,
 				04FFE7E22A539E2F00048904 /* ContentView.swift in Sources */,
+				04FFE7FC2A54FD1500048904 /* DataSourceMock.swift in Sources */,
+				04FFE7FE2A5B1D8B00048904 /* OrderTypeView.swift in Sources */,
+				04FFE7F72A54F5CA00048904 /* OrderTypeGridView.swift in Sources */,
 				04FFE7E02A539E2F00048904 /* ChefDeliveryApp.swift in Sources */,
 				04FFE7F02A53A2FB00048904 /* NavigationBar.swift in Sources */,
 			);
@@ -295,6 +327,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,6 +357,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
