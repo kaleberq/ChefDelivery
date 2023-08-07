@@ -8,8 +8,9 @@ struct ContentView: View {
                     .frame(height: 44)
             })
             ScrollView(.vertical, showsIndicators: false){
-                VStack{
+                VStack(spacing: 20){
                     OrderTypeGridView()
+                    CarouselTabView()
                 }
             }
             
