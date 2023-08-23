@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0410F5C52A9669C900127450 /* StoreItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410F5C42A9669C900127450 /* StoreItemView.swift */; };
+		0410F5C72A966D3C00127450 /* StoresContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410F5C62A966D3C00127450 /* StoresContainerView.swift */; };
 		04D174FD2A81962F00496FC7 /* CarouselItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D174FC2A81962F00496FC7 /* CarouselItemView.swift */; };
 		04D174FF2A8198DF00496FC7 /* CaroselTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D174FE2A8198DF00496FC7 /* CaroselTabView.swift */; };
 		04FFE7E02A539E2F00048904 /* ChefDeliveryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FFE7DF2A539E2F00048904 /* ChefDeliveryApp.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0410F5C42A9669C900127450 /* StoreItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreItemView.swift; sourceTree = "<group>"; };
+		0410F5C62A966D3C00127450 /* StoresContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoresContainerView.swift; sourceTree = "<group>"; };
 		04D174FC2A81962F00496FC7 /* CarouselItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselItemView.swift; sourceTree = "<group>"; };
 		04D174FE2A8198DF00496FC7 /* CaroselTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaroselTabView.swift; sourceTree = "<group>"; };
 		04FFE7DC2A539E2F00048904 /* ChefDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChefDelivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +50,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0410F5C32A96697A00127450 /* StoresView */ = {
+			isa = PBXGroup;
+			children = (
+				0410F5C42A9669C900127450 /* StoreItemView.swift */,
+				0410F5C62A966D3C00127450 /* StoresContainerView.swift */,
+			);
+			path = StoresView;
+			sourceTree = "<group>";
+		};
 		04D174FB2A8195CA00496FC7 /* CarouselView */ = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +87,7 @@
 		04FFE7DE2A539E2F00048904 /* ChefDelivery */ = {
 			isa = PBXGroup;
 			children = (
+				0410F5C32A96697A00127450 /* StoresView */,
 				04D174FB2A8195CA00496FC7 /* CarouselView */,
 				04FFE7EE2A53A2A700048904 /* App */,
 				04FFE7F82A54FA9800048904 /* Model */,
@@ -202,7 +216,9 @@
 				04D174FD2A81962F00496FC7 /* CarouselItemView.swift in Sources */,
 				04FFE7E22A539E2F00048904 /* ContentView.swift in Sources */,
 				04FFE7FC2A54FD1500048904 /* DataSourceMock.swift in Sources */,
+				0410F5C72A966D3C00127450 /* StoresContainerView.swift in Sources */,
 				04FFE7FE2A5B1D8B00048904 /* OrderTypeView.swift in Sources */,
+				0410F5C52A9669C900127450 /* StoreItemView.swift in Sources */,
 				04FFE7F72A54F5CA00048904 /* OrderTypeGridView.swift in Sources */,
 				04D174FF2A8198DF00496FC7 /* CaroselTabView.swift in Sources */,
 				04FFE7E02A539E2F00048904 /* ChefDeliveryApp.swift in Sources */,

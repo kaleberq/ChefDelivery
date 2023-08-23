@@ -21,6 +21,6 @@ struct CarouselTabView: View {
 
 struct CaroselTabView_Previews: PreviewProvider {
     static var previews: some View {
-        CarouselTabView()
+        CarouselTabView().previewLayout(.sizeThatFits)
     }
 }
